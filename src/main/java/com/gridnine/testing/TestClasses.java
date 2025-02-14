@@ -36,7 +36,7 @@ class FlightBuilder {
     /**
      * Метод по созданию полета.
      */
-    private static Flight createFlight(final LocalDateTime... dates) {
+    static Flight createFlight(final LocalDateTime... dates) {
         if ((dates.length % 2) != 0) {
             throw new IllegalArgumentException(
                     "you must pass an even number of dates");
